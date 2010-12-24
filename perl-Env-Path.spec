@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Advanced operations on path variables
 License:    GPL+ or Artistic
@@ -46,8 +46,7 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc Changes README
+%{_bindir}/envpath
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/bin/envpath
-/usr/share/man/man1/envpath.1.lzma
-
