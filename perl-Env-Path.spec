@@ -3,13 +3,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.19
-Release:	3
+Release:	4
 
 Summary:	Advanced operations on path variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Env/Env-Path-0.19.tar.gz
+Url:		http://metacpan.org/pod/Env::Path
+Source0:	http://www.cpan.org/modules/by-module/Env/Env-Path-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -43,16 +43,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.180.0-3mdv2011.0
-+ Revision: 654318
-- rebuild for updated spec-helper
-
-* Fri Dec 24 2010 Shlomi Fish <shlomif@mandriva.org> 0.180.0-2mdv2011.0
-+ Revision: 624653
-- Fix the files section
-- import perl-Env-Path
-
-
