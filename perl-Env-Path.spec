@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.19
-Release:	4
+Release:	5
 
 Summary:	Advanced operations on path variables
 License:	GPL+ or Artistic
