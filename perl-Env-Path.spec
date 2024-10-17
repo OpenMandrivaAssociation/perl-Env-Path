@@ -8,7 +8,7 @@ Release:	6
 Summary:	Advanced operations on path variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Env::Path
+Url:		https://metacpan.org/pod/Env::Path
 Source0:	http://www.cpan.org/modules/by-module/Env/Env-Path-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
