@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Env::Path
 Source0:	http://www.cpan.org/modules/by-module/Env/Env-Path-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
