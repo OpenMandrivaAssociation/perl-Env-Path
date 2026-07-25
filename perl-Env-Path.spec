@@ -2,14 +2,14 @@
 %define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.19
-Release:	6
+Version:	%{upstream_version}
+Release:	7
 
 Summary:	Advanced operations on path variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/pod/Env::Path
-Source0:	http://www.cpan.org/modules/by-module/Env/Env-Path-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Env-Path
+Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSB/Env-Path-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
