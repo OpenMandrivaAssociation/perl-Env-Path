@@ -1,15 +1,13 @@
 %define upstream_name    Env-Path
-%define upstream_version 0.19
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	7
+Version:	0.19
+Release:	8
 
 Summary:	Advanced operations on path variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Env-Path
-Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSB/Env-Path-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSB/Env-Path-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ Of course, core Perl constructs such
   $ENV{PATH} .= ":/usr/local/bin";
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
